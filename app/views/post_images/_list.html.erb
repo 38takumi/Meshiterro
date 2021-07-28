@@ -29,17 +29,28 @@
 
 
 
-
-
-<!--<% post_images.each do |post_image| %>  <!-- @post_images → post_images -->-->
-<!--<div>-->
-<!--  <%= link_to post_image_path(post_image.id) do %>-->
-<!--    <%= attachment_image_tag post_image, :image %>-->
-<!--  <% end %>-->
-<!--  <p>投稿ユーザー画像：<%= attachment_image_tag post_image.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></p>-->
-<!--  <p>ショップ名：<%= post_image.shop_name %></p>-->
-<!--  <p>説明：<%= post_image.caption %></p>-->
-<!--  <p>ユーザーネーム：<%= post_image.user.name %></p>-->
+<!--Bootstrapを入れていくと表示がなおる-->
+<!--<div class="card-list-containar py-5">-->
+<%# post_images.each do |post_image| %>  <!-- @post_images → post_images -->
+<!--<div class="card w-50 mx-auto mt-4 shadow-lg">-->
+<!--  <%#= link_to post_image_path(post_image.id) do %>-->
+<!--    <#%= attachment_image_tag post_image, :image %>-->
+<!--  <%# end %>-->
+<!--  <div class="card-body">-->
+<!--      <div class="row">-->
+<!--        <div class="col-2">-->
+<!--          <%#= link_to(post_image_path(post_image.id), class:"text-dark") do %>-->
+<!--  <p>投稿ユーザー画像：<#%= attachment_image_tag post_image.user, :profile_image, :fill, 60, 60, fallback: "no_image.jpg" %></p>-->
+<!--  </div>-->
+<!--        <div class="col-10">-->
+<!--          <p class="card-title">-->
+<!--            <strong><i class="far fa-flag"></i><span> <%#= post_image.shop_name %></span></strong>-->
+  <!--<p>ショップ名：<%#= post_image.shop_name %></p>-->
+<!--  <%# end %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--          <p class="card-text">説明：<%#= post_image.caption %></p>-->
+<!--  <p><i class="fas fa-user">ユーザーネーム：<%#= post_image.user.name %></p>-->
 <!--</div>-->
-<!--<% end %>-->
-<!--<%= paginate post_images %>  <!-- @post_images → post_images -->-->
+<!--<%# end %>-->
+<%#= paginate post_images %>  <!-- @post_images → post_images -->
